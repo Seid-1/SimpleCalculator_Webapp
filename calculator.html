@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>web calculator</title>
+<link rel="stylesheet" href="calculator.css">
+<link rel="icon" type="image/x-icon" href="image/calculator-icon-255x256-why2cfx2.png">
+    </head>
+
+ <body>
+    <div class="group">
+        <form>
+            <h1> Web Calculator</h1>
+            <div class="display">
+                <input style="border-style: solid; background-color: whitesmoke; border-width: thin; margin: 10px; padding: 5px; width:90%;" type="text" name="display">
+            </div>
+
+            <div class="button">
+                <input id="num" class="input-1" type="button" value="7"
+                onclick="display.value +='7'">
+                <input id="num" class="input-1" type="button" value="8"
+                onclick="display.value +='8'">
+                <input id="num" class="input-1" type="button" value="9"
+                onclick="display.value +='9'">
+                <input id="sign2" class="input-1" type="button" value="Del" 
+                class="delete()" onclick="display.value=display.value.slice(0,-1)">
+                <input id="sign" class="input-1" type="button" value="C"
+                class="clear()" onclick="display.value=display.value=null">
+            </div>
+
+            <div class="button">
+                <input id="num" class="input-1" type="button" value="4"
+                onclick="display.value +='4'">
+                <input id="num" class="input-1" type="button" value="5"
+                onclick="display.value +='5'">
+                <input id="num" class="input-1" type="button" value="6"
+                onclick="display.value +='6'">
+                <input id="sign2" class="input-1" type="button" value="+"
+                class="operator" onclick="display.value +='+'">
+                <input id="sign2" class="input-1" type="button" value="x"
+                class="operator" onclick="display.value +='*'">
+            </div>
+
+            <div class="button">
+                <input id="num" class="input-1"  type="button" value="1"
+                onclick="display.value +='1'">
+                <input id="num" class="input-1" type="button" value="2"
+                onclick="display.value +='2'">
+                <input id="num" class="input-1" type="button" value="3"
+                onclick="display.value +='3'">
+                <input id="sign2" class="input-1" type="button" value="-"
+                class="operator" onclick="display.value +='-'">
+                <input id="sign2" class="input-1" type="button" value="÷"
+                class="operator" onclick="display.value +='/'">
+            </div>  
+
+            <div class="button">
+                <input id="sign2" class="input-1" type="button" value="%"
+                class="operator" onclick="display.value +='/100'">
+                <input id="num" class="input-1" type="button" value="0"
+                onclick="display.value +='0'">
+                <input id="num" class="input-1" type="button" value="."
+                onclick="display.value +='.'">
+                <input id="equal" class="input-1" type="button" value="="
+                class="equal" onclick="display.value =eval(display.value)">
+            </div>
+
+            </form>
+        </div>
+
+ </body>
+</html>

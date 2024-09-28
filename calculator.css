@@ -1,0 +1,62 @@
+.group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:600px;
+}
+form{
+     border: 1px solid black;
+     border-radius: 8px;
+     height:500px;
+     width: 350px;
+     background-color: black;
+}
+.input-1{
+     width: 50px;
+     height: 50px;
+     background-color: rgb(130, 139, 145);
+     font-weight: 200px;
+     font-size: 25px;
+     margin: 4px;
+     border-radius: 50%;
+     border: none;
+     align-items: center;
+}
+form h1{
+    text-align:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: goldenrod;
+}
+.button{
+    margin:15px 20px;
+    display:flex;
+    justify-content:flex-start;
+    gap: 5px;
+}
+#num{
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+#sign{
+    background-color: rgb(130, 139, 145);
+    color:red;
+}
+#sign2{
+    color: hsl(103, 93%, 60%);
+}
+#equal{
+    background-color: hsl(103, 93%, 60%);
+    color: rgb(255, 255, 255);
+}
+#equal:active{
+    background-color:hsl(103, 93%, 72%);
+}
+#num:active{
+    background-color:  rgb(90, 89, 89);
+}
+#sign:active{
+    background-color:rgb(176, 183, 189);
+}
+#sign2:active{
+    background-color:rgb(176, 183, 189);
+}
